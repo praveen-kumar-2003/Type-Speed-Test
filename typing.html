@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel ="stylesheet" type ="text/css" href="typing.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="spinner-border d-none" id="spinner" role="status">
+        <span class="sr-only">Loading...</span>
+    </div>
+    <div id="speedTypingTest" class="typing-test-container p-3 pt-3">
+        <h1 class="heading">Speed Typing Test</h1>
+        <p class="para mt-3">On your fingers lets set Go!</p>
+        <div class="mt-4 d-flex flex-row">
+            <img class="image mr-4" src="https://assets.ccbp.in/frontend/dynamic-webapps/clock-img.png" />
+            <p id="timer" class="seconds">0</p>
+            <p class="time">seconds</p>
+        </div>
+        <div class="typing-para-cont mt-3 p-4">
+            <p id="quoteDisplay" class="typing-para"></p>
+            <textarea placeholder="Type Here!!!" id="quoteInput" rows="4" class="w-100 typing-input"></textarea>
+        </div>
+        <p id="result" class="result mt-3"></p>
+        <div class="mt-3 mb-3">
+            <button id="submitBtn" class="btn submit-btn mr-3">Submit</button>
+            <button id="resetBtn" class="btn btn-light">Reset</button>
+        </div>
+
+    </div>
+    <script src="typing.js"></script>
+</body>
+
+</html>
